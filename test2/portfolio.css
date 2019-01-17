@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MENU */
+
+.menu-button {
+  position: relative;
+  width: 120px;
+  height: 80px;
+  z-index: 1000;
+}
+
+label {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.menu-button span {
+  height: 2px;
+  width: 30px;
+  background: white;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transition: 1s transform, 1s background-color;
+  -webkit-transition: 1s transform, 1s background-color;
+  -moz-transition: 1s transform, 1s background-color;
+  -ms-transition: 1s transform, 1s background-color;
+  -o-transition: 1s transform, 1s background-color;
+}
+.menu-button span::before,
+.menu-button span::after {
+  content: '';
+  height: 2px;
+  width: 30px;
+  background: white;
+  z-index: 100;
+  position: absolute;
+  transition: 1s transform, 1s background-color;
+}
+
+.menu-button span::before {
+  transform: translateY(8px);
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  -ms-transform: translateY(8px);
+  -o-transform: translateY(8px);
+}
+.menu-button span::after {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+.menu-left {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #424242;
+  left: -100%;
+  z-index: 1;
+  opacity: 0.9;
+  transition: 1s transform;
+}
+
+.menu-top {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.menu-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  
+}
+
+.menu-item a {
+  color: white;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.menu-item {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid white; 
+  transform: scale(1.1);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}  
+
+
+
+#check-menu:checked ~ .menu-button span {
+  background-color: transparent;
+  transform: rotate(135deg)  ;
+  -webkit-transform: rotate(135deg)  ;
+  -moz-transform: rotate(135deg)  ;
+  -ms-transform: rotate(135deg)  ;
+  -o-transform: rotate(135deg)  ;
+}
+#check-menu:checked ~ .menu-button span::before,
+#check-menu:checked ~ .menu-button span::after {
+  transition: 0.5s transform;
+  -webkit-transition: 0.5s transform;
+  -moz-transition: 0.5s transform;
+  -ms-transition: 0.5s transform;
+  -o-transition: 0.5s transform;
+}
+#check-menu:checked ~ .menu-button span::before {
+  top: 0;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+#check-menu:checked ~ .menu-button span::after {
+  top: 0;
+  transform: translateY(0) rotate(90deg);
+  -webkit-transform: translateY(0) rotate(90deg);
+  -moz-transform: translateY(0) rotate(90deg);
+  -ms-transform: translateY(0) rotate(90deg);
+  -o-transform: translateY(0) rotate(90deg);
+}
+
+
+#check-menu:checked ~ .menu-left  {
+  transform: translateX(100%);
+  transition: 0.5s transform;
+  -webkit-transition: 0.5s transform;
+  -moz-transition: 0.5s transform;
+  -ms-transition: 0.5s transform;
+  -o-transition: 0.5s transform;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 80px);
+  bottom: 0;
+  right: 0;
+}
+
+.row-1 {
+  display: flex;
+  width: 100%;
+  height: 33%;
+  justify-content: space-between;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 33%;
+}
+.row-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 33%;
+}
+
+/* blocks and animation */
+
+.block {
+  position: relative;
+}
+
+.block .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  filter: grayscale(100%);
+  transition: 1s filter;
+}
+
+.next {
+  opacity: 0;
+}
+
+.block:hover .image {
+  filter: grayscale(0%);
+}
+
+.block:hover .image-1 {
+  animation-name: fadeImg-1;
+}
+.block:hover .image-2 {
+  animation-name: fadeImg-2;
+}
+
+.block:hover .image-3 {
+  animation-name: fadeImg-3;
+}
+
+.block:hover .image-4 {
+  animation-name: fadeImg-4;
+}
+
+/* CATS */
+
+.row-1 .block-1 {
+  width: 39.5%;
+  height: 100%;
+}
+
+.row-1 .block-1 .image-1 {
+  background: url('images/cat1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+
+}
+
+.row-1 .block-1 .image-2 {
+  background: url('images/cat2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-1 .image-3 {
+  background: url('images/cat3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-1 .image-4 {
+  background: url('images/cat4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* DOGS */
+
+.row-1 .block-2 {
+  width: 30%;
+  height: 100%;
+}
+
+.row-1 .block-2 .image-1 {
+  background: url('images/dog1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-1 .block-2 .image-2 {
+  background: url('images/dog2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-2 .image-3 {
+  background: url('images/dog3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-2 .image-4 {
+  background: url('images/dog4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* PANDAS */
+
+.row-1 .block-3 {
+  width: 30%;
+  height: 100%;
+}
+
+.row-1 .block-3 .image-1 {
+  background: url('images/panda1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-1 .block-3 .image-2 {
+  background: url('images/panda2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-3 .image-3 {
+  background: url('images/panda3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-1 .block-3 .image-4 {
+  background: url('images/panda4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* GIRAFFES */
+
+.row-2 .block-1 {
+  width: 49.7%;
+  height: 100%;
+}
+
+.row-2 .block-1 .image-1 {
+  background: url('images/giraffe1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-2 .block-1 .image-2 {
+  background: url('images/giraffe2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-2 .block-1 .image-3 {
+  background: url('images/giraffe3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-2 .block-1 .image-4 {
+  background: url('images/giraffe4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* RACCOONS */
+
+.row-2 .block-2 {
+  width: 50%;
+  height: 100%;
+}
+
+.row-2 .block-2 .image-1 {
+  background: url('images/raccoon1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-2 .block-2 .image-2 {
+  background: url('images/raccoon2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-2 .block-2 .image-3 {
+  background: url('images/raccoon3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-2 .block-2 .image-4 {
+  background: url('images/raccoon4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* GOPHERS */
+
+.row-3 .block-1 {
+  width: 25%;
+  height: 100%;
+}
+
+.row-3 .block-1 .image-1 {
+  background: url('images/gopher1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-3 .block-1 .image-2 {
+  background: url('images/gopher2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-1 .image-3 {
+  background: url('images/gopher3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-1 .image-4 {
+  background: url('images/gopher4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* OWLS */
+
+.row-3 .block-2 {
+  width: 49.5%;
+  height: 100%;
+}
+
+.row-3 .block-2 .image-1 {
+  background: url('images/owl1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-3 .block-2 .image-2 {
+  background: url('images/owl2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-2 .image-3 {
+  background: url('images/owl3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-2 .image-4 {
+  background: url('images/owl4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* BEARS */
+
+.row-3 .block-3 {
+  width: 25%;
+  height: 100%;
+}
+
+.row-3 .block-3 .image-1 {
+  background: url('images/bear1.jpg') no-repeat center;
+  opacity: 1;
+  background-size: cover;
+}
+
+.row-3 .block-3 .image-2 {
+  background: url('images/bear2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-3 .image-3 {
+  background: url('images/bear3.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.row-3 .block-3 .image-4 {
+  background: url('images/bear4.jpg') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  body { height: 200vh; }
+  .content { height: calc(200vh - 80px); bottom: -100%; }
+  .row-1 { flex-direction: column; height: 37%; }
+  .row-2 { flex-direction: column; height: 25.6%; }
+  .row-3 { flex-direction: column; height: 37%; }
+  .row-1 .block-1 { width: 100%; height: 33%; }
+  .row-1 .block-2 { width: 100%; height: 33%; }
+  .row-1 .block-3 { width: 100%; height: 33%; }
+  .row-2 .block-1 { width: 100%; height: 49%; }
+  .row-2 .block-2 { width: 100%; height: 50%; }
+  .row-3 .block-1 { width: 100%; height: 33%; }
+  .row-3 .block-2 { width: 100%; height: 33%; }
+  .row-3 .block-3 { width: 100%; height: 33%; }
+}
+
+/* KEYFRAMES */
+
+@keyframes fadeImg-1 {
+  from  { opacity:1; }
+  16%   { opacity:1; }
+  25%   { opacity:0; }
+  91%   { opacity:0; }
+  to    { opacity:1; }
+}
+
+@keyframes fadeImg-2 {
+  from  { opacity:0; }
+  16%   { opacity:0; }
+  25%   { opacity:1; }
+  41%   { opacity:1; }
+  50%   { opacity:0; }
+  to    { opacity:0; }
+}
+
+@keyframes fadeImg-3 {
+  from  { opacity:0; }
+  41%   { opacity:0; }
+  50%   { opacity:1; }
+  66%   { opacity:1; }
+  75%   { opacity:0; }
+  to    { opacity:0; }
+}
+
+@keyframes fadeImg-4 {
+  from  { opacity:0; }
+  66%   { opacity:0; }
+  75%   { opacity:1; }
+  91%   { opacity:1; }
+  to    { opacity:0; }
+}
