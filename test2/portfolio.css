@@ -493,7 +493,7 @@ li {
 
 @media screen and (max-width: 900px) {
   body { height: auto; }
-  .content { height: 400vh; top: 80px; }
+  .content { height: 4000px; top: 80px; }
   .row-1 { flex-direction: column; height: auto; }
   .row-2 { flex-direction: column; height: auto; }
   .row-3 { flex-direction: column; height: auto; }
