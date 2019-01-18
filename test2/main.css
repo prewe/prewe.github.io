@@ -394,6 +394,9 @@ li {
     .col-2 { height: 34%; }
     .col-1 .block-1, .col-1 .block-2 { height: 50%; }
     .portfolio-header { text-align: right; padding-right: 2%; }
+    .about-header,
+    .contacts-header,
+    .portfolio-header { opacity: 0.9; }
 }
 
 
