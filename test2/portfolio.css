@@ -204,8 +204,8 @@ li {
   position: absolute;
   width: 100%;
   height: calc(100vh - 80px);
-  bottom: 0;
-  right: 0;
+  top: 80px;
+  
 }
 
 .row-1 {

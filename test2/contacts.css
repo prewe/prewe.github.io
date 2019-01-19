@@ -198,6 +198,8 @@ li {
 /* content */
 
 .content {
+    position: absolute;
+    top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

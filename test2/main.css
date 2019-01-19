@@ -198,6 +198,8 @@ li {
 /* CONTENT */
 
 .content {
+    position: absolute;
+    top: 80px;
     display: flex;
     justify-content: space-between;
     width: 100%;
