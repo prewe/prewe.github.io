@@ -10,8 +10,12 @@
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
+
+    <div id="preloader"></div>
+    
 
     <div class="top-line">
         <span class="plus"><noindex>Интим-услуги не предоставляются!</noindex></span>
@@ -101,6 +105,15 @@
                 relativeInput: true,  
             });
         }
+
+        jQuery(document).ready(function($) {
+            $(window).load(function() {
+                setTimeout(function() {
+                    $('#preloader').fadeOut('slow', function() {});
+                }, 2000);
+
+            });
+        });
     </script>
 </body>
 </html>
