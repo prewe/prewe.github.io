@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background: #000;
     color: #fff;
@@ -38,8 +40,12 @@ body {
 }
 
 .header {
+    
+    
     width: 100%;
     overflow: hidden;
+    -ms-scroll-limit: 0 0 0 0;
+    -ms-overflow-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,10 +55,15 @@ body {
 
 
 .menu {
+    z-index: 1;
     position: absolute;
     top: 40%;
     width: 60%;
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
     align-items: center;
     justify-content: space-between;
     padding-right: 3%;
@@ -75,6 +86,10 @@ body {
 
 .about {
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
     flex-direction: column;
     align-items: center;
 }
@@ -101,6 +116,10 @@ body {
 .certificate {
     width: 100%;
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: center;
     padding-top: 50px;
 }
@@ -108,6 +127,10 @@ body {
 .certificate-wrap {
     width: 80%;
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -156,6 +179,10 @@ body {
 
 .rules {
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
 }
@@ -163,6 +190,10 @@ body {
 .rules-wrap {
     width: 80%;
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: space-between;
 }
 
@@ -202,6 +233,10 @@ li {
 .telephone {
     margin-bottom: 100px;
     display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     justify-content: center;
     
     
@@ -252,6 +287,14 @@ li {
 
 @media screen and (max-width: 1100px) {
     .menu { width: 90%; }
+}
+
+/* IE10+ CSS styles  */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    html { overflow-x: hidden; }
+    .menu { width: 800px; left: 50%; transform:  translateX(-50%); -webkit-transform:  translateX(-50%); -moz-transform:  translateX(-50%); -ms-transform:  translateX(-50%); -o-transform:  translateX(-50%); }
+    .scroll { left: 50%; transform: translateX(-50%)  ; -webkit-transform: translateX(-50%)  ; -moz-transform: translateX(-50%)  ; -ms-transform: translateX(-50%)  ; -o-transform: translateX(-50%)  ; }
 }
 
 
