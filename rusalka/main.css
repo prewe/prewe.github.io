@@ -293,6 +293,11 @@ li {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     html { overflow-x: hidden; }
+    .scene img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .menu { width: 800px; left: 50%; transform:  translateX(-50%); -webkit-transform:  translateX(-50%); -moz-transform:  translateX(-50%); -ms-transform:  translateX(-50%); -o-transform:  translateX(-50%); }
     .scroll { left: 50%; transform: translateX(-50%)  ; -webkit-transform: translateX(-50%)  ; -moz-transform: translateX(-50%)  ; -ms-transform: translateX(-50%)  ; -o-transform: translateX(-50%)  ; }
 }
