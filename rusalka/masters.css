@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    width: 100%;
+}
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #000 url('images/main/preloader.gif') no-repeat center center;
+}
+
+
+
+.menu-wrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    align-items: center;
+    justify-content: center;
+    padding-right: 3%;
+}
+
+.masters-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.masters-gallery-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.master-block {
+    width: 410px;
+    height: 410px;
+    position: relative;
+    
+    
+}
+
+.master-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out    ;
+    -webkit-transition: 0.5s ease-in-out    ;
+    -moz-transition: 0.5s ease-in-out    ;
+    -ms-transition: 0.5s ease-in-out    ;
+    -o-transition: 0.5s ease-in-out    ;
+}
+
+.master-image-2 {
+    opacity: 0;
+}
+
+.master-block:hover .master-image-1 {
+    opacity: 0;
+}
+
+.master-block:hover .master-image-2 {
+    opacity: 1;
+}
+
+/* MASTER-1 */
+
+.master-1 .master-image-1 {
+    background: url('images/masters/master_1/Maria_1.png') no-repeat center;
+}
+
+.master-1 .master-image-2 {
+    background: url('images/masters/master_1/Maria_2.png') no-repeat center;
+}
+
+/* MASTER-2 */
+
+.master-2 .master-image-1 {
+    background: url('images/masters/master_2/Olesya_1.png') no-repeat center;
+}
+
+.master-2 .master-image-2 {
+    background: url('images/masters/master_2/Olesya_2.png') no-repeat center;
+}
+
+/* MASTER-3 */
+
+.master-3 .master-image-1 {
+    background: url('images/masters/master_3/alisa_1.png') no-repeat center;
+}
+
+.master-3 .master-image-2 {
+    background: url('images/masters/master_3/alisa_2.png') no-repeat center;
+}
+
+/* MASTER-4 */
+
+.master-4 .master-image-1 {
+    background: url('images/masters/master_4/anjelika_1.png') no-repeat center;
+}
+
+.master-4 .master-image-2 {
+    background: url('images/masters/master_4/anjelika_2.png') no-repeat center;
+}
+
+/* MASTER-5 */
+
+.master-5 .master-image-1 {
+    background: url('images/masters/master_5/almira_1.png') no-repeat center;
+}
+
+.master-5 .master-image-2 {
+    background: url('images/masters/master_5/almira_2.png') no-repeat center;
+}
+
+/* MASTER-6 */
+
+.master-6 .master-image-1 {
+    background: url('images/masters/master_6/Alina_1.png') no-repeat center;
+}
+
+.master-6 .master-image-2 {
+    background: url('images/masters/master_6/Alina_2.png') no-repeat center;
+}
+
+/* MASTER-7 */
+
+.master-7 .master-image-1 {
+    background: url('images/masters/master_7/Valery_1.png') no-repeat center;
+}
+
+.master-7 .master-image-2 {
+    background: url('images/masters/master_7/Valery_2.png') no-repeat center;
+}
+
+/* MASTER-8 */
+
+.master-8 .master-image-1 {
+    background: url('images/masters/master_8/alena_1.png') no-repeat center;
+}
+
+.master-8 .master-image-2 {
+    background: url('images/masters/master_8/alena_2.png') no-repeat center;
+}
+
+/* MASTER-9 */
+
+.master-9 .master-image-1 {
+    background: url('images/masters/master_9/irma_1.png') no-repeat center;
+}
+
+.master-9 .master-image-2 {
+    background: url('images/masters/master_9/irma_2.png') no-repeat center;
+}
+
+/* MASTER-10 */
+
+.master-10 .master-image-1 {
+    background: url('images/masters/master_10/Jenya_1.png') no-repeat center;
+}
+
+.master-10 .master-image-2 {
+    background: url('images/masters/master_10/Jenya_2.png') no-repeat center;
+}
+
+/* MASTER-11 */
+
+.master-11 .master-image-1 {
+    background: url('images/masters/master_11/Alla_1.png') no-repeat center;
+}
+
+.master-11 .master-image-2 {
+    background: url('images/masters/master_11/Alla_2.png') no-repeat center;
+}
+
+/* MASTER-12 */
+
+.master-12 .master-image-1 {
+    background: url('images/masters/master_12/Lilya_1.png') no-repeat center;
+}
+
+.master-12 .master-image-2 {
+    background: url('images/masters/master_12/Lilya_2.png') no-repeat center;
+}
+
+/* MASTER-13 */
+
+.master-13 .master-image-1 {
+    background: url('images/masters/master_13/kira_1.png') no-repeat center;
+}
+
+.master-13 .master-image-2 {
+    background: url('images/masters/master_13/kira_2.png') no-repeat center;
+}
+
+/* MASTER-14 */
+
+.master-14 .master-image-1 {
+    background: url('images/masters/master_14/liza_1-1.png') no-repeat center;
+}
+
+.master-14 .master-image-2 {
+    background: url('images/masters/master_14/liza_2-1.png') no-repeat center;
+}
+
+/* MASTER-15 */
+
+.master-15 .master-image-1 {
+    background: url('images/masters/master_15/Zara_1.png') no-repeat center;
+}
+
+.master-15 .master-image-2 {
+    background: url('images/masters/master_15/Zara_2.png') no-repeat center;
+}
+
+/* MASTER-16 */
+
+.master-16 .master-image-1 {
+    background: url('images/masters/master_16/anna2019_1.png') no-repeat center;
+}
+
+.master-16 .master-image-2 {
+    background: url('images/masters/master_16/anna2019_2.png') no-repeat center;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu-wrap { flex-direction: column; }
+    .logo { order: -1; }
+    .masters { margin: 20px 0; }
+}
+
+@media screen and (max-width: 1500px) {
+    .menu-wrap { width: 90%; }
+}
+
