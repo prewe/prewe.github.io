@@ -39,7 +39,7 @@ body {
     display: -webkit-flex; 
     align-items: center;
     justify-content: center;
-    padding-right: 3%;
+    padding-right: 2%;
 }
 
 .masters-gallery {
@@ -250,6 +250,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .menu-wrap { flex-direction: column; }
+    .menu { padding-right: 0; }
     .logo { order: -1; }
     .masters { margin: 20px 0; }
 }
@@ -257,4 +258,11 @@ body {
 @media screen and (max-width: 1500px) {
     .menu-wrap { width: 90%; }
 }
+
+@media screen and (max-width: 500px) {
+    .master-block { width: 360px; height: 360px; }
+    .menu { padding-right: 0; }
+}
+
+
 
