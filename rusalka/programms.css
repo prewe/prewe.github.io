@@ -162,14 +162,16 @@ body {
     .logo { order: -1; }
     .masters { margin: 20px 0; }
     .programms-list { margin-top: 0px; }
+    .additional-services .programm-text { width: 90% }
+
 }
 
 @media screen and (max-width: 1000px) {
     .menu-wrap { width: 90%; }
-    .programms-list { width: 90% }
+    .programms-list { width: 100% }
     .programm-block { flex-direction: column; align-items: center; }
     .programm-image, .programm-text { width: 100%; margin-top: 20px;}
-    .programm-text {  align-items: center; text-align: center; justify-content: space-between; }
+    .programm-text { width: 90%; align-items: center; text-align: center; justify-content: space-between; }
     .programm-time, .programm-info, .programm-price { margin-top: 15px; }
     .additional-services .programm-header, .additional-services .programm-price { margin-top: 15px; }
     .programm-info { text-align: justify; }
