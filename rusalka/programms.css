@@ -169,6 +169,7 @@ body {
     .programm-header { font-size: 36px; }
     .programm-time, .programm-info, .programm-price { margin-top: 15px; }
     .additional-services { justify-content: center; width: 100%; }
+    .additional-services-text { font-size: 36px; }
     .additional-services .programm-header, .additional-services .programm-price { margin-top: 15px; }
     .programm-info { text-align: justify; }
     
