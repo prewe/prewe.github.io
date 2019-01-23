@@ -173,13 +173,15 @@ body {
     .programm-image, .programm-text { width: 100%; margin-top: 20px;}
     .programm-text { width: 90%; align-items: center; text-align: center; justify-content: space-between; }
     .programm-time, .programm-info, .programm-price { margin-top: 15px; }
-    .additional-services { justify-content: center; }
+    .additional-services { justify-content: center; width: 100%; }
     .additional-services .programm-header, .additional-services .programm-price { margin-top: 15px; }
     .programm-info { text-align: justify; }
     
 
 
 }
+
+
 
 
 
