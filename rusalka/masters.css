@@ -31,22 +31,32 @@ body {
 }
 
 .menu {
-    margin-top: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    padding: 20px 0;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
-    display: -webkit-box; 
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex; 
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     padding-right: 2%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .masters-gallery {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    
+    margin-top: 120px;  
 }
 
 .masters-gallery-wrap {
@@ -252,6 +262,7 @@ body {
     .menu-wrap { flex-direction: column; }
     .menu { padding-right: 0; }
     .logo { order: -1; }
+    .masters-gallery { margin-top: 200px; }
     .masters { margin: 20px 0; }
 }
 
