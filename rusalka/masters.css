@@ -259,10 +259,11 @@ body {
 
 
 @media screen and (max-width: 800px) {
+    .menu { position: static; transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); }
     .menu-wrap { flex-direction: column; }
     .menu { padding-right: 0; }
     .logo { order: -1; }
-    .masters-gallery { margin-top: 200px; }
+    .masters-gallery { margin-top: 0; }
     .masters { margin: 20px 0; }
 }
 
