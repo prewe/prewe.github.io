@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -25,9 +26,15 @@ body {
 
 .menu-wrap {
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .menu {
@@ -41,11 +48,14 @@ body {
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-right: 2%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -54,15 +64,24 @@ body {
 }
 
 .masters-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 120px;  
 }
 
 .masters-gallery-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .master-block {
@@ -260,9 +279,9 @@ body {
 
 @media screen and (max-width: 800px) {
     .menu { position: static; transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); }
-    .menu-wrap { flex-direction: column; }
+    .menu-wrap { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
     .menu { padding-right: 0; }
-    .logo { order: -1; }
+    .logo { -webkit-box-ordinal-group: 0; -ms-flex-order: -1; order: -1; }
     .masters-gallery { margin-top: 0; }
     .masters { margin: 20px 0; }
 }
