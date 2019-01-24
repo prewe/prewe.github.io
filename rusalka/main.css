@@ -11,6 +11,8 @@ body {
     width: 100%;
 }
 
+/* PRELOADER */
+
 #preloader {
     position: fixed;
     left: 0;
@@ -22,7 +24,7 @@ body {
     background: #000 url('images/main/preloader.gif') no-repeat center center;
 }
 
-
+/* TOP LINE */
 
 .top-line {
     font-family: Tahoma;
@@ -52,9 +54,9 @@ body {
     background: transparent url(images/main/sprite.png) 0 0 no-repeat;
 }
 
+/* HEADER */
+
 .header {
-    
-    
     width: 100%;
     overflow: hidden;
     -ms-scroll-limit: 0 0 0 0;
@@ -79,6 +81,8 @@ body {
     -o-transform: scale(1.1);
 }
 
+/* MENU */
+
 .menu {
     z-index: 1;
     position: absolute;
@@ -97,6 +101,43 @@ body {
     padding-right: 3%;
 }
 
+.menu-text {
+    font-size: 26px;
+    position: relative;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu-text::before,
+.menu-text::after {
+    content: '';
+    background: url('images/main/romb.png') no-repeat center;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+}
+.menu-text::before {
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform:translateY();
+}
+.menu-text::after {
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform:translateY();
+}
+
 
 
 .masters,
@@ -113,6 +154,8 @@ body {
     height: 150px;
     
 }
+
+/* ABOUT BLOCK */
 
 .about {
     display: flex;
@@ -146,6 +189,8 @@ body {
     text-align: justify;
     margin-top: 50px;
 }
+
+/* CERTIFICATE BLOCK */
 
 .certificate {
     width: 100%;
@@ -213,7 +258,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
+/* RULES BLOCK */
 
 .rules {
     display: flex;
@@ -240,7 +285,7 @@ body {
             justify-content: space-between;
 }
 
-.rules h1 {
+.rules-header {
     color: rgb(209, 180, 52);
     font-size: 33px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -272,6 +317,8 @@ li {
     margin-top: 60px;
     margin-bottom: 30px;
 }
+
+/* TELEPHONE BLOCK */
 
 .telephone {
     margin-bottom: 100px;

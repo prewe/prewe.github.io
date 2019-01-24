@@ -10,6 +10,8 @@ body {
     width: 100%;
 }
 
+/* PRELOADER */
+
 #preloader {
     position: fixed;
     left: 0;
@@ -21,7 +23,7 @@ body {
     background: #000 url('images/main/preloader.gif') no-repeat center center;
 }
 
-
+/* MENU */
 
 .menu-wrap {
     width: 70%;
@@ -52,6 +54,45 @@ body {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
+
+.menu-text {
+    font-size: 26px;
+    position: relative;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.menu-text::before,
+.menu-text::after {
+    content: '';
+    background: url('images/main/romb.png') no-repeat center;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+}
+.menu-text::before {
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform:translateY();
+}
+.menu-text::after {
+    top: 50%;
+    right: -10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform:translateY();
+}
+
+/* PROGRAMMS BLOCK */
 
 .programms-list {
     display: flex;
@@ -140,6 +181,8 @@ body {
     background: url('images/programms/pip.png') no-repeat center;
 }
 
+/* ADD SERVICES BLOCK */
+
 .additional-services {
     width: 100%;
     height: 400px;
@@ -158,7 +201,7 @@ body {
 
 
 
-
+/* media */
 
 @media screen and (max-width: 1000px) {
     .menu-wrap { width: 90%; }
@@ -184,7 +227,6 @@ body {
     .masters { margin: 20px 0; }
     .programms-list { margin-top: 0px; }
     .additional-services .programm-text { width: 90% }
-
 }
 
 
