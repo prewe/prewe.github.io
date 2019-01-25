@@ -106,6 +106,8 @@ body {
     -webkit-transform:translateY();
 }
 
+
+
 /* MASTER CONTENT BLOCK */
 
 .master-content {
@@ -142,4 +144,8 @@ body {
     .masters { margin: 20px 0; }
     .master-content { margin-top: 0px; }
     .additional-services .programm-text { width: 90% }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-wrap { width: 90%; }
 }
