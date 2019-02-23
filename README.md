@@ -1,3 +1,3 @@
 # prewe.github.io
 
-[пример](http://example.com/ "Необязательная подсказка")
+[Пример](https://prewe.github.io/firstproject/main.html)
